@@ -71,9 +71,11 @@ class PostBuilder extends Builder
      * @param int $currentPage
      * @return \Illuminate\Database\Eloquent\Collection
      */
+    /*
+    // Disable custom pagina function for Laravel 5.1 compatibility
     public function paginate($perPage = 10, $currentPage = 1)
     {
         $skip = $currentPage * $perPage - $perPage;
         return $this->skip($skip)->take($perPage)->get();
-    }
+    }*/
 }
